@@ -32,7 +32,7 @@ const Navbar = () => {
             <li className='flex py-6 text-4xl'><h1 className='text-cyan-400'>03.</h1>Experience</li>
             <li className='flex py-6 text-4xl'><h1 className='text-cyan-400'>04.</h1>Projects</li>
             <li className='flex py-6 text-4xl'><h1 className='text-cyan-400'>05.</h1>Contacts</li>
-            <button className='flex py-6 text-4xl border-2 rounded-md px-2 py-2'>Resume</button>
+            <button className='flex text-4xl border-2 rounded-md px-2 py-2'>Resume</button>
         </ul>
     </div>
   )
