@@ -3,9 +3,9 @@ import Name_Logo from '../assets/Name_Logo.png'
 
 const SkillsAndTools = () => {
   return (
-    <div name='SkillsAndTools' className='bg-[#0a192f] text-gray-300 py-4 px-8'>
+    <div name='SkillsAndTools' className='bg-[#0a192f] text-gray-300 py-4 px-20'>
         {/* Container */}
-        <div className='mx-auto p-4 flex flex-col h-full px-10'>
+        <div className='mx-auto p-4 flex flex-col justify-center w-full h-full px-10'>
             <div className='text-center'>
                 <div>
                     <p className='text-3xl font-bold inline border-b-4 border-pink-600'>Skills & Tools</p>
@@ -40,9 +40,9 @@ const SkillsAndTools = () => {
                     </div>
                 </div>
 
-            <div className='grid md:grid-cols-2 grid-cols-1 text-sm'>
+            <div className='grid md:grid-cols-2 grid-cols-1 text-sm py-4'>
                 {/* Skills */}
-                <div>
+                <div className='py-4'>
                     <p>Skills</p>
                     <div>
                         <ul>
@@ -56,7 +56,7 @@ const SkillsAndTools = () => {
                 </div>
 
                 {/* Technologies */}
-                <div>Tools &Technologies I have worked with
+                <div className='py-4'>Tools &Technologies I have worked with
                     <div className='md:grid-cols-2 flex'>
                         <ul>
                             <li>Keras</li>
