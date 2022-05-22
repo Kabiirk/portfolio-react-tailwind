@@ -12,33 +12,33 @@ const SkillsAndTools = () => {
                 </div>
             </div>
             {/* Coding Languages */}
-                <div className='text-sm pt-5'>Some languages I code in</div>
-                <div className='grid md:grid-cols-6 grid-cols-3 text-center py-4'>
-                    <div>
-                        <img className='mx-auto' src={Name_Logo} alt="Python" />
-                        <p className='my-4'>Python</p>
-                    </div>
-                    <div>
-                        <img className='mx-auto' src={Name_Logo} alt="Python" />
-                        <p className='my-4'>Javascript</p>
-                    </div>
-                    <div>
-                        <img className='mx-auto' src={Name_Logo} alt="Python" />
-                        <p className='my-4'>C++</p>
-                    </div>
-                    <div>
-                        <img className='mx-auto' src={Name_Logo} alt="Python" />
-                        <p className='my-4'>Dart</p>
-                    </div>
-                    <div>
-                        <img className='mx-auto' src={Name_Logo} alt="Python" />
-                        <p className='my-4'>HTML</p>
-                    </div>
-                    <div>
-                        <img className='mx-auto' src={Name_Logo} alt="Python" />
-                        <p className='my-4'>Assembly</p>
-                    </div>
+            <div className='text-sm pt-5'>Some languages I code in</div>
+            <div className='grid md:grid-cols-6 grid-cols-3 text-center py-4'>
+                <div>
+                    <img className='mx-auto' src={Name_Logo} alt="Python" />
+                    <p className='my-4'>Python</p>
                 </div>
+                <div>
+                    <img className='mx-auto' src={Name_Logo} alt="Python" />
+                    <p className='my-4'>Javascript</p>
+                </div>
+                <div>
+                    <img className='mx-auto' src={Name_Logo} alt="Python" />
+                    <p className='my-4'>C++</p>
+                </div>
+                <div>
+                    <img className='mx-auto' src={Name_Logo} alt="Python" />
+                    <p className='my-4'>Dart</p>
+                </div>
+                <div>
+                    <img className='mx-auto' src={Name_Logo} alt="Python" />
+                    <p className='my-4'>HTML</p>
+                </div>
+                <div>
+                    <img className='mx-auto' src={Name_Logo} alt="Python" />
+                    <p className='my-4'>Assembly</p>
+                </div>
+            </div>
 
             <div className='grid md:grid-cols-2 grid-cols-1 text-sm py-4'>
                 {/* Skills */}

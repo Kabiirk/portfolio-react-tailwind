@@ -1,5 +1,4 @@
 import React from 'react'
-import Name_Logo from '../assets/Name_Logo.png'
 
 const Projects = () => {
   return (
@@ -12,21 +11,102 @@ const Projects = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 {/* Card */}
-                <div className='group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
                     <div>
-                        <span>
-
+                        <span className='text-2xl font-bold text-white tracking-width'>
+                            React.js Application 1
                         </span>
-                        <div>
+                        <div className='pt-8 text-center'>
                             <a href="/">
-                                <button>Button 1</button>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
                             <a href="/">
-                                <button>button 2</button>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
                     </div>
                 </div>
+                {/* Card */}
+                <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
+                    <div>
+                        <span className='text-2xl font-bold text-white tracking-width'>
+                            React.js Application 2
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {/* Card */}
+                <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
+                    <div>
+                        <span className='text-2xl font-bold text-white tracking-width'>
+                            React.js Application 3
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {/* Card */}
+                <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
+                    <div>
+                        <span className='text-2xl font-bold text-white tracking-width'>
+                            React.js Application 4
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {/* Card */}
+                <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
+                    <div>
+                        <span className='text-2xl font-bold text-white tracking-width'>
+                            React.js Application 5
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {/* Card */}
+                <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
+                    <div>
+                        <span className='text-2xl font-bold text-white tracking-width'>
+                            React.js Application 6
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
