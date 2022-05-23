@@ -17,7 +17,8 @@ const Contact = () => {
                 </div>
             </div>
             {/* Coding Languages */}
-            <div className='grid md:grid-cols-4 grid-cols-2 py-4 mx-1  bg-red-200'>
+            {/* <div className='grid md:grid-cols-4 grid-cols-2 py-4 mx-1  bg-red-200'> */}
+            <div className='flex  bg-red-200'>
                 <LinkedIn className='h-[100px] py-4 mx-auto bg-red-300' />
                 <Github className='h-[100px] py-4 mx-auto bg-red-400' />
                 <Email className='h-[100px] py-4 mx-auto bg-red-500' />
