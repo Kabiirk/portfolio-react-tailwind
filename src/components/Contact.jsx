@@ -6,7 +6,7 @@ import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounde
 
 const Contact = () => {
   return (
-    <div name='Contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4 text-gray-300'>
+    <div name='Contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-6 text-gray-300'>
         <div className='mx-auto p-4 flex flex-col justify-center w-full h-full px-10'>
             <div className='text-center'>
                 <div>
@@ -17,8 +17,7 @@ const Contact = () => {
                 </div>
             </div>
             {/* Coding Languages */}
-            {/* <div className='grid md:grid-cols-4 grid-cols-2 py-4 mx-1  bg-red-200'> */}
-            <div className='flex  bg-red-200'>
+            <div className='grid md:grid-cols-4 grid-cols-2 pt-4 mx-10 bg-red-200'>
                 <LinkedIn className='h-[100px] py-4 mx-auto bg-red-300' />
                 <Github className='h-[100px] py-4 mx-auto bg-red-400' />
                 <Email className='h-[100px] py-4 mx-auto bg-red-500' />
