@@ -17,11 +17,11 @@ const Contact = () => {
                 </div>
             </div>
             {/* Coding Languages */}
-            <div className='grid md:grid-cols-4 grid-cols-2 pt-4 mx-10 bg-red-200'>
-                <LinkedIn className='h-[100px] py-4 mx-auto bg-red-300' />
-                <Github className='h-[100px] py-4 mx-auto bg-red-400' />
-                <Email className='h-[100px] py-4 mx-auto bg-red-500' />
-                <Behance className='h-[100px] py-4 mx-auto bg-red-600' />
+            <div className='grid md:grid-cols-4 grid-cols-2 pt-5 mx-auto'>
+                <LinkedIn className='h-[100px] py-4 px-10' />
+                <Github className='h-[100px] py-4 px-10' />
+                <Email className='h-[100px] py-4 px-10' />
+                <Behance className='h-[100px] py-4 px-10' />
             </div>
         </div>
     </div>
