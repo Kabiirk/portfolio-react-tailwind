@@ -9,9 +9,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@font-face {
+    font-family: 'calibre';
+    src: local('calibre'),url('./fonts/calibre/CalibreRegular.otf') format('otf');
+}
+@font-face {
+    font-family: 'sf-mono';
+    src: local('sf-mono'),url('./fonts/sf-mono/SFMonoRegular.otf') format('otf');
+}
+
 @layer base {
     body {
-        @apply font-[Lato];
+        @apply font-[calibre];
     }
     li {
         @apply px-4;
