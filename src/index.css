@@ -11,17 +11,18 @@
 
 @font-face {
     font-family: 'calibre';
-    src: local('calibre'),url('./fonts/calibre/CalibreRegular.otf') format('otf');
+    src: url('./fonts/calibre/CalibreRegular.otf');
 }
 @font-face {
-    font-family: 'sf-mono';
-    src: local('sf-mono'),url('./fonts/sf-mono/SFMonoRegular.otf') format('otf');
+    font-family: 'sf-mono-re';
+    src: url('./fonts/sf-mono/SFMonoRegular.otf');
+}
+@font-face {
+    font-family: 'sf-mono-sb';
+    src: url('./fonts/sf-mono/SFMonoSemibold.otf');
 }
 
 @layer base {
-    body {
-        @apply font-[calibre];
-    }
     li {
         @apply px-4;
         @apply cursor-pointer;

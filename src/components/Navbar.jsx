@@ -11,13 +11,13 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className='hidden md:flex'>
+        <ul className='hidden md:flex font-sf-mono-re text-xs'>
             <li className='flex pr-3 my-auto'><h1 className='text-cyan-400'>01.</h1>About</li>
             <li className='flex px-3 my-auto'><h1 className='text-cyan-400'>02.</h1>Skills & Tools</li>
             <li className='flex px-3 my-auto'><h1 className='text-cyan-400'>03.</h1>Experience</li>
             <li className='flex px-3 my-auto'><h1 className='text-cyan-400'>04.</h1>Projects</li>
             <li className='flex pl-3 pr-5 my-auto'><h1 className='text-cyan-400'>05.</h1>Contacts</li>
-            <button className='border-2 rounded-md px-3 pt-2 pb-1 text-center'>Resume</button>
+            <button className='border-2 rounded-md px-3 pt-2 pb-2 text-center'>Resume</button>
         </ul>
 
         {/* Hamburger */}

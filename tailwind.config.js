@@ -3,7 +3,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['calibre', 'sf-mono']
+        'calibre': ['calibre', 'sans-serif'],
+        'sf-mono-re': ['sf-mono-re', 'mono'],
+        'sf-mono-sb': ['sf-mono-sb', 'mono'],
       }
     },
   },
