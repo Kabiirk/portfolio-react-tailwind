@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'calibre': ['calibre', 'sans-serif'],
+        'calibre-re': ['calibre-re', 'sans-serif'],
+        'calibre-sb': ['calibre-sb', 'sans-serif'],
         'sf-mono-re': ['sf-mono-re', 'mono'],
         'sf-mono-sb': ['sf-mono-sb', 'mono'],
       }
@@ -11,3 +12,16 @@ module.exports = {
   },
   plugins: [],
 }
+/*
+Font list for the website
+Only keep those .OTF files which the website uses
+& not the whole font family
+Calibre
+Regular
+Semibold
+
+
+SF-mono
+Rwgular
+Semibold
+*/

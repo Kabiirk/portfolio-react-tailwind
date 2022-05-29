@@ -18,10 +18,10 @@ const Contact = () => {
             </div>
             {/* Coding Languages */}
             <div className='grid md:grid-cols-4 grid-cols-2 pt-5 mx-auto'>
-                <LinkedIn className='h-[100px] py-4 px-10' />
-                <Github className='h-[100px] py-4 px-10' />
-                <Email className='h-[100px] py-4 px-10' />
-                <Behance className='h-[100px] py-4 px-10' />
+                <LinkedIn className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
+                <Github className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
+                <Email className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
+                <Behance className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
             </div>
         </div>
     </div>

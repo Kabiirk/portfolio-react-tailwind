@@ -13,11 +13,11 @@ const Hero = () => {
 
         {/* Container */}
         <div className='max-w-[1000px] mx-auto px-5 flex flex-col justify-center h-full place-items-center text-center'>
-            <p className='text-pink-600 py-1 font-sf-mono-re'>Hi, my name is</p>
-            <h1 className='text-3xl sm:text-5xl font-bold text-[#ccd6f6] py-1'>Kabiir Krishna</h1>
-            <h2 className='text-3xl sm:text-5xl font-bold text-[#8892b0] py-1'>I build awesome things.</h2>
-            <div className='pt-5'>
-                <button className='text-white rounded-md flex items-center border-2 px-6 pt-3 pb-2 hover:bg-pink-600 hover:border-pink-600'>Check out my website !</button>
+            <p className='text-cyan-400 text-sm pb-4 font-sf-mono-re'>Hi, my name is</p>
+            <h1 className='text-3xl sm:text-5xl font-calibre-sb text-[#ccd6f6] py-2'>Kabiir Krishna</h1>
+            <h2 className='text-3xl sm:text-5xl font-calibre-sb text-[#8892b0] pt-2'>I build awesome things.</h2>
+            <div className='pt-6'>
+                <button className='text-sm rounded-md flex items-center px-6 py-3 font-sf-mono-re border-2 text-cyan-400 border-cyan-400 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Check out my website !</button>
             </div>
         </div>
 
