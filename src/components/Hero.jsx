@@ -1,14 +1,17 @@
 import React from 'react'
-import Name_Logo from '../assets/Name_Logo.png'
+// import Name_Logo from '../assets/Name_Logo.png'
+import { ReactComponent as LinkedIn } from '../assets/social_icons/LinkedIn_Rounded.svg';
+import { ReactComponent as Github } from '../assets/social_icons/Github_Rounded.svg';
+import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounded.svg';
 
 const Hero = () => {
   return (
     <div name='hero' className='w-full h-screen bg-[#0a192f] flex'>
         {/* Left Socials */}
         <div className='ml-10 my-auto flex-col invisible sm:visible'>
-          <a href="/"><img className='w-5 pb-2' alt='Github' src={Name_Logo}/></a>
-          <a href="/"><img className='w-5 py-2' alt='LinkedIn' src={Name_Logo}/></a>
-          <a href="/"><img className='w-5 pt-2' alt='Behance' src={Name_Logo}/></a>
+          <a href="/"><Github className='w-5 pb-2 fill-[#ccd6f6] hover:fill-cyan-400 hover:duration-200'/></a>
+          <a href="/"><LinkedIn className='w-5 py-2 fill-[#ccd6f6] hover:fill-cyan-400 hover:duration-200'/></a>
+          <a href="/"><Behance className='w-5 pt-2 fill-[#ccd6f6] hover:fill-cyan-400 hover:duration-200'/></a>
         </div>
 
         {/* Container */}
