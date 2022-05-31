@@ -43,19 +43,20 @@ const Projects = () => {
                 <p className='font-sf-mono-sb text-xs'>Check out more of my work on <a href="https://github.com/" className='text-cyan-400'><u>github</u></a> </p>
             </div>
 
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-                {/* { Project_Data.map( (data, key) =>{
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5 p-5'>
+                { Project_Data.map( (data) =>{
                     return(
                         <ProjectCard title={data.title} description={data.description} stack={data.stack} />
                     );
                 }
                  )
-                } */}
-                {/* Card */}
+                }
+
+            {/* 
                 <ProjectCard title={Project_Data[0].title} description={Project_Data[0].description} stack={Project_Data[0].stack}/>
-                {/* Card */}
+
                 <ProjectCard title={Project_Data[1].title} description={Project_Data[1].description} stack={Project_Data[1].stack}/>
-                {/* Card */}
+
                 <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
                     <div>
                         <span className='text-2xl font-bold text-white tracking-width'>
@@ -71,7 +72,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                {/* Card */}
+
                 <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
                     <div>
                         <span className='text-2xl font-bold text-white tracking-width'>
@@ -87,7 +88,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                {/* Card */}
+
                 <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
                     <div>
                         <span className='text-2xl font-bold text-white tracking-width'>
@@ -103,7 +104,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                {/* Card */}
+
                 <div className='group container rounded-md flex justify-center items-center mx-auto content-div bg-gray-600'>
                     <div>
                         <span className='text-2xl font-bold text-white tracking-width'>
@@ -119,7 +120,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-
+            */}
 
             </div>
         </div>
