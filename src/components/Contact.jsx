@@ -10,10 +10,10 @@ const Contact = () => {
         <div className='mx-auto p-4 flex flex-col justify-center w-full h-full px-10'>
             <div className='text-center'>
                 <div>
-                    <p className='text-3xl font-bold inline border-b-4 border-pink-600'>Get in Touch !</p>
+                    <p className='text-3xl font-calibre-sb'>Get in Touch</p>
                 </div>
                 <div>
-                    <p className='text-1xl inline'>You can reach me at...</p>
+                    <p className='text-1xl inline font-sf-mono-sb text-cyan-400 text-xs'>You can reach me at...</p>
                 </div>
             </div>
             {/* Coding Languages */}

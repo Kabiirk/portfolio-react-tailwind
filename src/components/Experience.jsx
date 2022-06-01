@@ -1,21 +1,28 @@
 import React from 'react'
-import Name_Logo from '../assets/Name_Logo.png'
+// import Name_Logo from '../assets/Name_Logo.png'
+import Tabs from '../components/Tabs'
 
-const About = () => {
-    return (
-      <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+const Experience = () => {
+  return (
+    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
         <div className='flex flex-col justify-center items-center w-full h-full '>
           <div className='max-w-[1000px] w-full grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
               <p className='text-3xl inline font-calibre-sb'>
-                About Me
+                Experience
               </p>
             </div>
           </div>
-            <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-              <div className='content-right'>
-                <img src={Name_Logo} alt="My pic" className='mx-auto'/>
+
+          {/* Should be Tabs */}
+          {/* <div className='max-w-[750px] w-full grid sm:grid-cols-2 gap-8 px-4 bg-blue-500'>
+              <div className='text-center md:flex-col flex pl-10 bg-emerald-400'>
+                  <div className='bg-red-400'>A</div>
+                  <div className='bg-red-500'>B</div>
+                  <div className='bg-red-600'>C</div>
+                  <div className='bg-red-700'>D</div>
               </div>
+
               <div className='font-calibre-re'>
                 <p>
                   A 2021 B.Tech graduate, seeking opportunities in domains like
@@ -30,13 +37,13 @@ const About = () => {
                   Engineering on the side. I also like develop applications & websites.
                   In my free time, I like to code & do graphic design.
                 </p>
-                <br />
-                <button className='border-2 rounded-md px-5 py-4 text-sm font-sf-mono-re justified-center text-cyan-400 border-cyan-400 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Download my Resume !</button>
               </div>
-            </div>
+            </div> */}
+            <Tabs />
+
         </div>
       </div>
-    );
-  };
+  )
+}
 
-export default About
+export default Experience

@@ -11,8 +11,8 @@ const SkillsAndTools = () => {
         </div>
 
         {/* Languages */}
-        <div className='font-calibre-re'>Languages I code in</div>
-        <div className='w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center py-8 font-sf-mono-re text-sm'>
+        <div className='w-full font-calibre-re pb-2'>Languages I code in</div>
+        <div className='w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center pb-8 font-sf-mono-re text-sm'>
             <div>
                 <img className='w-20 mx-auto' src={Name_Logo} alt="HTML icon" />
                 <p className='my-4'>Python</p>
