@@ -1,6 +1,6 @@
 import React from 'react'
 // import Name_Logo from '../assets/Name_Logo.png'
-import Tabs from '../components/Tabs'
+// import Tabs from '../components/Tabs'
 
 const Experience = () => {
   return (
@@ -15,8 +15,8 @@ const Experience = () => {
           </div>
 
           {/* Should be Tabs */}
-          {/* <div className='max-w-[750px] w-full grid sm:grid-cols-2 gap-8 px-4 bg-blue-500'>
-              <div className='text-center md:flex-col flex pl-10 bg-emerald-400'>
+          <div className='max-w-[750px] w-full grid sm:grid-cols-2 gap-8 px-4 bg-blue-500'>
+              <div className='text-center md:flex-col lg:felx-col flex pl-10 bg-emerald-400'>
                   <div className='bg-red-400'>A</div>
                   <div className='bg-red-500'>B</div>
                   <div className='bg-red-600'>C</div>
@@ -38,8 +38,7 @@ const Experience = () => {
                   In my free time, I like to code & do graphic design.
                 </p>
               </div>
-            </div> */}
-            <Tabs />
+            </div>
 
         </div>
       </div>
