@@ -16,6 +16,7 @@ const Experience = () => {
       id:1,
       position: "Assosciate, OneCyber",
       org:"PriceWaterhouseCoopers, India",
+      tabname:'PwC India',
       duration: "July 2021 - Present",
       para:'',
       points: [
@@ -27,6 +28,7 @@ const Experience = () => {
       id:2,
       position: "Intern, Dept. of Earth Sciences",
       org:"IIT-Roorkee",
+      tabname:'IIT-Roorkee',
       duration: "Jan 2021 - June 2021",
       para:'',
       points: [
@@ -38,6 +40,7 @@ const Experience = () => {
       id:3,
       position: "Intern, Data Engineering",
       org:"IBM",
+      tabname:'IBM',
       duration: "April 2020 - June 2020",
       para:'As IoT Solution data-architect of "Smart-Surveillance" Project that IBM implemented for London HQ’ed Security Services MNC, I worked on',
       points: [
@@ -51,6 +54,7 @@ const Experience = () => {
       id:4,
       position: "Intern, Data Analytics",
       org:"Deloitte",
+      tabname:'Deloitte',
       duration: "May 2019 - July 2019",
       para:'As an Analyst, my Project "Buyer Sentiment Analysis"- implemented for a global FMCG leader, involved :',
       points: [
@@ -63,6 +67,7 @@ const Experience = () => {
       id:5,
       position: "Microsoft Student Partner",
       org:"VIT Knowledge Community",
+      tabname:'Microsoft SP',
       duration: "August 2019 - August 2021",
       para:'',
       points: [
@@ -73,6 +78,7 @@ const Experience = () => {
       id:6,
       position: "Head, University Affairs",
       org:"Computer Society of India, VIT Student Branch",
+      tabname:'CSI-VIT',
       duration: "July 2019 - July 2020",
       para:'',
       points: [
@@ -92,28 +98,36 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Should be Tabs */}
-          <div className='max-w-[1000px] w-full grid md:grid-cols-4 grid-col-1 gap-8 px-10'>
-              <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll gap-2 col-span-1 sm:col-span-1 font-sf-mono-re'>
-                  <div className={ togglestate===1 ? 'bg-blue-500' : 'bg-red-400'} onClick={() => toggleTab(1)}>PwC India</div>
+          {/* Tabs */}
+          <div className='max-w-[1000px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
+              <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll col-span-1 sm:col-span-1 font-sf-mono-re custom-scroll mr-10'>
+                  {/* <div className={ togglestate===1 ? 'bg-blue-500' : 'bg-red-400'} onClick={() => toggleTab(1)}>PwC India</div>
                   <div className={ togglestate===2 ? 'bg-blue-500' : 'bg-red-500'} onClick={() => toggleTab(2)}>IIT-Roorkee</div>
                   <div className={ togglestate===3 ? 'bg-blue-500' : 'bg-red-600'} onClick={() => toggleTab(3)}>IBM</div>
                   <div className={ togglestate===4 ? 'bg-blue-500' : 'bg-red-700'} onClick={() => toggleTab(4)}>Deloitte</div>
                   <div className={ togglestate===5 ? 'bg-blue-500' : 'bg-red-800'} onClick={() => toggleTab(5)}>Microsoft SP</div>
-                  <div className={ togglestate===6 ? 'bg-blue-500' : 'bg-red-900'} onClick={() => toggleTab(6)}>CSI-VIT</div>
+                  <div className={ togglestate===6 ? 'bg-blue-500' : 'bg-red-900'} onClick={() => toggleTab(6)}>CSI-VIT</div> */}
+                  { Job_Data.map( (data) =>{
+                    return(
+                      <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
+                    )
+                  }
+                  )
+
+                  }
               </div>
 
-              <div className='font-calibre-re md:col-span-3 col-span-1 bg-emerald-500 min-h-[300px]'>
+              {/* Tab Content */}
+              <div className='font-calibre-re md:col-span-3 col-span-1  min-h-[300px]'>
                 { Job_Data.map( (data) =>{
                 return(
-                    <div className= { togglestate ===data.id ? 'bg-emerald-600' : 'hidden'}>
+                    <div className= { togglestate ===data.id ? '' : 'hidden'}>
                       <Jobs
                         position={data.position} 
                         org={data.org}
                         duration={data.duration}
                         para={data.para}
                         points={data.points}
-                        className='bg-re'
                       />
                     </div>
                     );

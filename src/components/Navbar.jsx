@@ -16,7 +16,7 @@ const Navbar = () => {
             <li className='flex px-3 my-auto'><h1 className='text-cyan-400'>02.</h1>Skills & Tools</li>
             <li className='flex px-3 my-auto'><h1 className='text-cyan-400'>03.</h1>Experience</li>
             <li className='flex px-3 my-auto'><h1 className='text-cyan-400'>04.</h1>Projects</li>
-            <li className='flex pl-3 pr-5 my-auto'><h1 className='text-cyan-400'>05.</h1>Contacts</li>
+            <li className='flex pl-3 pr-5 my-auto'><h1 className='text-cyan-400'>05.</h1>Contact</li>
             <button className='border-2 rounded-md px-3 py-2 text-center text-cyan-400 border-cyan-400 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Resume</button>
         </ul>
 

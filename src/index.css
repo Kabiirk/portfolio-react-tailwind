@@ -45,6 +45,7 @@
   /* Targtes on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
     background-color: #0a192f;
   }
   
