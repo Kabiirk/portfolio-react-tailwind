@@ -90,7 +90,7 @@ const Experience = () => {
   return (
     <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
-          <div className='max-w-[1000px] w-full grid grid-cols-1'>
+          <div className='max-w-[800px] w-full grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
               <p className='text-3xl inline font-calibre-sb'>
                 Experience
@@ -99,7 +99,7 @@ const Experience = () => {
           </div>
 
           {/* Tabs */}
-          <div className='max-w-[1000px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
+          <div className='max-w-[800px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
               <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll col-span-1 sm:col-span-1 font-sf-mono-re custom-scroll mr-10'>
                   {/* <div className={ togglestate===1 ? 'bg-blue-500' : 'bg-red-400'} onClick={() => toggleTab(1)}>PwC India</div>
                   <div className={ togglestate===2 ? 'bg-blue-500' : 'bg-red-500'} onClick={() => toggleTab(2)}>IIT-Roorkee</div>
@@ -109,7 +109,8 @@ const Experience = () => {
                   <div className={ togglestate===6 ? 'bg-blue-500' : 'bg-red-900'} onClick={() => toggleTab(6)}>CSI-VIT</div> */}
                   { Job_Data.map( (data) =>{
                     return(
-                      <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
+                      // <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
+                      <div className={ togglestate===data.id ? 'active' : 'not-active'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
                     )
                   }
                   )

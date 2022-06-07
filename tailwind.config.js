@@ -7,6 +7,14 @@ module.exports = {
         'calibre-sb': ['calibre-sb', 'sans-serif'],
         'sf-mono-re': ['sf-mono-re', 'mono'],
         'sf-mono-sb': ['sf-mono-sb', 'mono'],
+      },
+
+      colors:{
+        "background":"var(--background)",
+        "card":"var(--card)", 
+        "highlight":"var(--highlight)",
+        "heading":"var(--heading)",
+        "subheading":"var(--subheading)",
       }
     },
   },
