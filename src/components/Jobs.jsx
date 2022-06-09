@@ -3,13 +3,16 @@ import React from 'react'
 const Jobs = (props) => {
   return (
     <div>
-        <div className='font-calibre-sb text-xl'>{props.position} - {props.org}</div>
+        <div className='font-calibre-sb text-xl'>
+          <span className='pr-2'>{props.position}</span>
+          <span className='text-highlight'> @ {props.org} </span>
+        </div>
         <p className='font-sf-mono-sb text-sm'>{props.duration}</p>
         <p className={ props.para==='' ? 'hidden' : 'font-calibre-re text-sm'} >{props.para}</p>
         <ul className='font-calibre-re text-sm'>
             { props.points.map( (point) =>{
                 return(
-                    <li>{point}</li>
+                    <li className='styled-bullets' >{point}</li>
                     );
                 }
               )

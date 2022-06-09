@@ -20,8 +20,8 @@ const Experience = () => {
       duration: "July 2021 - Present",
       para:'',
       points: [
-          'Responsible to evaluate &deliver Cyber Security services comprising of ‘As-Is & To-Be’ risk assessment strategies, governance & practices and their compliance.',
-          'BlynkThis leads to implementation of Security technologies, applications & infrastructure to acheive the goal of enterprise-wide Cyber Security.',
+          'Responsible to evaluate & deliver Cyber Security services comprising of ‘As-Is & To-Be’ risk assessment strategies, governance & practices and their compliance.',
+          'This leads to implementation of Security technologies, applications & infrastructure to acheive the goal of enterprise-wide Cyber Security.',
         ],
     },
     {
@@ -77,7 +77,7 @@ const Experience = () => {
     {
       id:6,
       position: "Head, University Affairs",
-      org:"Computer Society of India, VIT Student Branch",
+      org:"Computer Society of India, VIT",
       tabname:'CSI-VIT',
       duration: "July 2019 - July 2020",
       para:'',
@@ -119,7 +119,7 @@ const Experience = () => {
               </div>
 
               {/* Tab Content */}
-              <div className='font-calibre-re md:col-span-3 col-span-1  min-h-[300px]'>
+              <div className='font-calibre-re md:col-span-3 col-span-1  min-h-[400px]'>
                 { Job_Data.map( (data) =>{
                 return(
                     <div className= { togglestate ===data.id ? '' : 'hidden'}>

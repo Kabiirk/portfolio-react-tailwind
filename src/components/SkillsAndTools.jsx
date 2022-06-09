@@ -40,47 +40,47 @@ const SkillsAndTools = () => {
         </div>
 
         {/* Skills */}
-        <div className='w-full grid md:grid-cols-4 grid-cols-1 text-center bg-red-300'>
+        <div className='w-full grid md:grid-cols-4 gap-4 grid-cols-1 text-center'>
             {/* Skills */}
-            <div className='text-left col-span-1 bg-red-400'>
+            <div className='text-left col-span-1 '>
                 <p className='font-calibre-re'>Skills</p>
-                <ul className='font-sf-mono-re text-xs px-3'>
-                    <li>Data Engineering</li>
-                    <li>Data Visualization</li>
-                    <li>Web/App dev</li>
-                    <li>Graphic Design</li>
-                    <li>UI/UX</li>
+                <ul className='font-sf-mono-re text-xs'>
+                    <li className='styled-bullets'>Data Engineering</li>
+                    <li className='styled-bullets'>Data Visualization</li>
+                    <li className='styled-bullets'>Web/App dev</li>
+                    <li className='styled-bullets'>Graphic Design</li>
+                    <li className='styled-bullets'>UI/UX</li>
                 </ul>
             </div>
 
             {/* Technologies */}
-            <div className='text-left col-span-3 bg-red-500'>
+            <div className='text-left col-span-3'>
                 <p className='font-calibre-re'>Technologies I have worked with</p>
-                <div className='flex flex-wrap'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-3 '>
                     <div>
-                        <ul className='font-sf-mono-re text-xs px-3 bg-red-600'>
-                            <li>Keras</li>
-                            <li>WxPython/PyQT5</li>
-                            <li>Seaborn/Matplotlib</li>
-                            <li>React.js</li>
-                            <li>D3.js/Three.js</li>
+                        <ul className='font-sf-mono-re text-xs '>
+                            <li className='styled-bullets'>Keras</li>
+                            <li className='styled-bullets'>WxPython/PyQT5</li>
+                            <li className='styled-bullets'>Seaborn/Matplotlib</li>
+                            <li className='styled-bullets'>React.js</li>
+                            <li className='styled-bullets'>D3.js/Three.js</li>
                         </ul>
                     </div>
                     <div>
-                        <ul className='font-sf-mono-re text-xs px-3 bg-red-700'>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>Flutter(Android)</li>
-                            <li>Bash</li>
-                            <li>CMake</li>
+                        <ul className='font-sf-mono-re text-xs '>
+                            <li className='styled-bullets'>Docker</li>
+                            <li className='styled-bullets'>Kubernetes</li>
+                            <li className='styled-bullets'>Flutter(Android)</li>
+                            <li className='styled-bullets'>Bash</li>
+                            <li className='styled-bullets'>CMake</li>
                         </ul>
                     </div>
                     <div>
-                        <ul className='font-sf-mono-re text-xs px-3 bg-red-800'>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Adobe XD</li>
-                            <li>NASM</li>
+                        <ul className='font-sf-mono-re text-xs'>
+                            <li className='styled-bullets'>Photoshop</li>
+                            <li className='styled-bullets'>Illustrator</li>
+                            <li className='styled-bullets'>Adobe XD</li>
+                            <li className='styled-bullets'>NASM</li>
                         </ul>
                     </div>
                 </div>
