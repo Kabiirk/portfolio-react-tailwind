@@ -5,7 +5,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className='fixed w-full h-15 flex justify-between items-center px-10 bg-[#0a192f] text-gray-300 z-50'>
+    <div className='fixed w-full h-15 flex justify-between items-center px-10 bg-background text-gray-300 z-50'>
         <div>
             <img src={Name_Logo} alt='Logo' className='w-8 my-5' />
         </div>

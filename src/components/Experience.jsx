@@ -88,7 +88,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='about' className='w-full h-screen bg-background text-gray-300'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
           <div className='max-w-[800px] w-full grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>

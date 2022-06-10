@@ -6,22 +6,22 @@ import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounde
 
 const Contact = () => {
   return (
-    <div name='Contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-6 text-gray-300'>
+    <div name='Contact' className='w-full h-screen bg-background flex justify-center items-center p-6 text-gray-300'>
         <div className='mx-auto p-4 flex flex-col justify-center w-full h-full px-10'>
             <div className='text-center'>
                 <div>
                     <p className='text-3xl font-calibre-sb'>Get in Touch</p>
                 </div>
                 <div>
-                    <p className='text-1xl inline font-sf-mono-sb text-cyan-400 text-xs'>You can reach me at...</p>
+                    <p className='text-1xl inline font-sf-mono-sb text-highlight text-xs'>You can reach me at...</p>
                 </div>
             </div>
             {/* Coding Languages */}
             <div className='grid md:grid-cols-4 grid-cols-2 pt-5 mx-auto'>
-                <LinkedIn className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
-                <Github className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
-                <Email className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
-                <Behance className='h-[100px] py-4 px-10 fill-[#ccd6f6]' />
+                <LinkedIn className='h-[100px] py-4 px-10 fill-heading' />
+                <Github className='h-[100px] py-4 px-10 fill-heading' />
+                <Email className='h-[100px] py-4 px-10 fill-heading' />
+                <Behance className='h-[100px] py-4 px-10 fill-heading' />
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@ import Name_Logo from '../assets/Name_Logo.png'
 const ProjectCard = (props) => {
     var tech_stack = props.stack.map(item=> <div>{item}</div> )
   return (
-    <div className='group rounded-md bg-[#112240] py-[2rem] px-[1.75rem] '>
+    <div className='group rounded-md bg-card py-[2rem] px-[1.75rem] '>
         <div className='h-full w-full flex flex-col'>
             <img alt='Project Icon' src={Name_Logo} className='w-12 pb-2'/>
             <p className='font-calibre-sb text-lg leading-6 pb-2'>{props.title}</p>

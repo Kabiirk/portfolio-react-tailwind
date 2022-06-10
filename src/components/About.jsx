@@ -4,7 +4,7 @@ import profile from '../assets/profile.jpg'
 
 const About = () => {
     return (
-      <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+      <div name='about' className='w-full h-screen bg-background text-heading'>
         <div className='flex flex-col justify-center items-center w-full h-full '>
           <div className='max-w-[800px] w-full grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
@@ -35,7 +35,7 @@ const About = () => {
                 </p>
                 <br />
                 <div className='flex sm:justify-start justify-center'>
-                <button className='border-2 rounded-md px-5 py-4 text-sm font-sf-mono-re justified-center text-cyan-400 border-cyan-400 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Download my Resume !</button>
+                <button className='border-2 rounded-md px-5 py-4 text-sm font-sf-mono-re justified-center text-highlight border-highlight hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Download my Resume !</button>
                 </div>
               </div>
             </div>
