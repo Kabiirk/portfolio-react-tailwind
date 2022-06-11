@@ -110,7 +110,7 @@ const Experience = () => {
                   { Job_Data.map( (data) =>{
                     return(
                       // <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
-                      <div className={ togglestate===data.id ? 'active' : 'not-active'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
+                      <div key={data.id} className={ togglestate===data.id ? 'active' : 'not-active'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
                     )
                   }
                   )
@@ -122,7 +122,7 @@ const Experience = () => {
               <div className='font-calibre-re md:col-span-3 col-span-1  min-h-[400px]'>
                 { Job_Data.map( (data) =>{
                 return(
-                    <div className= { togglestate ===data.id ? '' : 'hidden'}>
+                    <div key={data.id} className= { togglestate ===data.id ? '' : 'hidden'}>
                       <Jobs
                         position={data.position} 
                         org={data.org}

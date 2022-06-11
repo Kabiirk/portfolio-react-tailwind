@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
 
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto px-5 flex flex-col justify-center h-full place-items-center text-center'>
+        <div className='max-w-[1000px] mx-auto flex flex-col justify-center h-full place-items-center text-center'>
             <p className='text-highlight text-sm pb-4 font-sf-mono-re'>Hi, my name is</p>
             <h1 className='text-3xl sm:text-5xl font-calibre-sb text-heading py-2'>Kabiir Krishna</h1>
             <h2 className='text-3xl sm:text-5xl font-calibre-sb text-subheading pt-2'>I build awesome things.</h2>

@@ -2,7 +2,7 @@ import React from 'react'
 import Name_Logo from '../assets/Name_Logo.png'
 
 const ProjectCard = (props) => {
-    var tech_stack = props.stack.map(item=> <div>{item}</div> )
+    var tech_stack = props.stack.map((item,index) => <div key={index}>{item}</div> )
   return (
     <div className='group rounded-md bg-card py-[2rem] px-[1.75rem] '>
         <div className='h-full w-full flex flex-col'>

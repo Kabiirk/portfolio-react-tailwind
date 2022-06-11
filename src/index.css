@@ -68,6 +68,20 @@
     transition-duration: 200ms;
 }
 
+/* Media Queries for jobs tab */
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .active{
+        border-left: 0;
+        border-top: 4px solid var(--highlight);
+    }
+
+    .not-active{
+        border-left: 0;
+        border-top: 2px solid #E5E7EB;
+    }
+  }
+
 /* For bullets */
 /* skills-list {
     display: grid;

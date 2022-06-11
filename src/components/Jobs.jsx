@@ -10,9 +10,9 @@ const Jobs = (props) => {
         <p className='font-sf-mono-sb text-sm'>{props.duration}</p>
         <p className={ props.para==='' ? 'hidden' : 'font-calibre-re text-sm'} >{props.para}</p>
         <ul className='font-calibre-re text-sm'>
-            { props.points.map( (point) =>{
+            { props.points.map( (point, index) =>{
                 return(
-                    <li className='styled-bullets' >{point}</li>
+                    <li key={index} className='styled-bullets' >{point}</li>
                     );
                 }
               )
