@@ -49,7 +49,7 @@ const Projects = () => {
                 <p className='font-sf-mono-sb text-xs'>Check out more of my work on <a href="https://github.com/" className='text-highlight'><u>github</u></a> </p>
             </div>
 
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5 p-5'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 p-12'>
                 { Project_Data.map( (data) =>{
                     return(
                         <ProjectCard key={data.id} title={data.title} description={data.description} stack={data.stack} />
