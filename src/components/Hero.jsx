@@ -10,7 +10,7 @@ const variant={
   show: {
     opacity:1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
     },
   },
 };
@@ -24,7 +24,8 @@ const item = {
     opacity:1,
     y:0,
     transition: {
-      duration: 0.4,
+      ease : [0.6, -0.01, 0.05, 0.05],
+      duration: 0.8,
     },
   },
 };

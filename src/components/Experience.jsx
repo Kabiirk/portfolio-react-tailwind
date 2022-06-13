@@ -119,7 +119,7 @@ const Experience = () => {
               </div>
 
               {/* Tab Content */}
-              <div className='font-calibre-re md:col-span-3 col-span-1  min-h-[400px]'>
+              <div className='font-calibre-re md:col-span-3 col-span-1 min-h-[450px]'>
                 { Job_Data.map( (data) =>{
                 return(
                     <div key={data.id} className= { togglestate ===data.id ? '' : 'hidden'}>

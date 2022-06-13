@@ -48,7 +48,7 @@
     --tw-bg-opacity: 0.2;
     background-color: rgb(165 243 252 / var(--tw-bg-opacity));
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-left: 4px solid var(--highlight);
+    border-left: 2px solid var(--highlight);
     color: var(--highlight);
     cursor: pointer;
     flex-shrink: 0;
@@ -56,7 +56,7 @@
 
 .not-active{
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-left: 2px solid #E5E7EB;
+    border-left: 1px solid #E5E7EB;
     color: rgb(209 213 219);
     cursor: pointer;
     flex-shrink: 0;
@@ -73,12 +73,12 @@
     /* For mobile phones: */
     .active{
         border-left: 0;
-        border-top: 4px solid var(--highlight);
+        border-top: 2px solid var(--highlight);
     }
 
     .not-active{
         border-left: 0;
-        border-top: 2px solid #E5E7EB;
+        border-top: 1px solid #E5E7EB;
     }
   }
 
@@ -94,7 +94,7 @@
 } */
 .styled-bullets {
       position: relative;
-      margin-bottom: 5px;
+      margin-bottom: 0px;
       padding-left: 20px;
       /* font-family: var(--font-mono);
       font-size: var(--fz-xs); */
@@ -106,7 +106,7 @@
     position: absolute;
     left: 0;
     color: var(--highlight);
-    line-height: 15px;
+    /* line-height: 15px; */
 }
 
 /* For Scrollbar */

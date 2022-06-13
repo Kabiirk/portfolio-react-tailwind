@@ -5,7 +5,9 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className='fixed w-full h-15 flex justify-between items-center px-10 bg-background text-gray-300 z-50'>
+    // Have to statically declare bg-color so that RGB can be extracted & alpha can be applied 
+    // ref. : https://github.com/tailwindlabs/tailwindcss/issues/1692
+    <div className='bg-opacity-70 bg-[#0a192f] backdrop-filter backdrop-blur-md fixed w-full h-13 flex justify-between items-center px-10 text-gray-300 z-50'>
         <div>
             <img src={Name_Logo} alt='Logo' className='w-8 my-5' />
         </div>
