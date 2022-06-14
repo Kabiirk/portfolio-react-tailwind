@@ -6,26 +6,13 @@ import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounde
 import { motion } from 'framer-motion';
 
 const variant={
-  hidden: {opacity:0},
+  hidden: {y:50, opacity:0},
   show: {
-    opacity:1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const item = {
-  hidden: {
-    opacity:0,
-    y:50,
-  },
-  show: {
-    opacity:1,
     y:0,
+    opacity:1,
     transition: {
-      ease : [0.6, -0.01, 0.05, 0.05],
-      duration: 0.8,
+      delay:2,
+      duration:0.5,
     },
   },
 };
@@ -35,9 +22,9 @@ const Hero = () => {
     <div name='hero' className='w-full h-screen bg-background flex'>
         {/* Left Socials */}
         <div className='ml-10 my-auto flex-col invisible sm:visible'>
-          <a href="/"><Github className='w-5 pb-2 fill-heading hover:fill-highlight hover:duration-200'/></a>
-          <a href="/"><LinkedIn className='w-5 py-2 fill-heading hover:fill-highlight hover:duration-200'/></a>
-          <a href="/"><Behance className='w-5 pt-2 fill-heading hover:fill-highlight hover:duration-200'/></a>
+          <a href="/"><Github className='w-5 pb-2 fill-heading hover:fill-[#64ffda] hover:duration-200'/></a>
+          <a href="/"><LinkedIn className='w-5 py-2 fill-heading hover:fill-[#64ffda] hover:duration-200'/></a>
+          <a href="/"><Behance className='w-5 pt-2 fill-heading hover:fill-[#64ffda] hover:duration-200'/></a>
         </div>
 
         {/* Container */}
@@ -45,13 +32,13 @@ const Hero = () => {
                     variants={variant}
                     initial="hidden"
                     animate="show"
-        >
-            <motion.p className='text-highlight text-sm pb-4 font-sf-mono-re' variants={item}>Hi, my name is</motion.p>
-            <motion.h1 className='text-3xl sm:text-5xl font-calibre-sb text-heading py-2' variants={item}>Kabiir Krishna</motion.h1>
-            <motion.h2 className='text-3xl sm:text-5xl font-calibre-sb text-subheading pt-2' variants={item}>I build awesome things.</motion.h2>
-            <motion.div className='pt-6' variants={item}>
-                <button className='text-sm rounded-md flex items-center px-6 py-3 font-sf-mono-re border-2 text-highlight border-highlight hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Check out my website !</button>
-            </motion.div>
+                    >
+            <p className='text-highlight text-sm pb-4 font-sf-mono-re'>Hi, my name is</p>
+            <h1 className='text-3xl sm:text-5xl font-calibre-sb text-heading py-2'>Kabiir Krishna</h1>
+            <h2 className='text-3xl sm:text-5xl font-calibre-sb text-subheading pt-2'>I build awesome things.</h2>
+            <div className='pt-6'>
+                <button className='text-sm rounded-md flex items-center px-6 py-3 font-sf-mono-re border-2 text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'>Check out my website !</button>
+            </div>
         </motion.div>
 
         {/* Right Email */}

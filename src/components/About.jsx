@@ -35,7 +35,7 @@ const About = () => {
                 </p>
                 <br />
                 <div className='flex sm:justify-start justify-center'>
-                <button className='border-2 rounded-md px-5 py-4 text-sm font-sf-mono-re justified-center text-highlight border-highlight hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Download my Resume !</button>
+                <button className='border-2 rounded-md px-6 py-3 text-sm font-sf-mono-re justified-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'>Download my Resume !</button>
                 </div>
               </div>
             </div>

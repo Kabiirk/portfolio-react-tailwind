@@ -1,8 +1,6 @@
 import React from 'react'
-// import Name_Logo from '../assets/Name_Logo.png'
-// import Tabs from '../components/Tabs'
 import { useState } from 'react'
-import Jobs from './Jobs';
+import Jobs from '../subcomponents/Jobs';
 
 const Experience = () => {
   const [togglestate, settogglestate] = useState(1);

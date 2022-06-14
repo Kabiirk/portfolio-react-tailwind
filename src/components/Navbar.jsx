@@ -1,5 +1,19 @@
 import React, {useState} from 'react'
 import Name_Logo from '../assets/Name_Logo.png'
+import { motion } from 'framer-motion';
+
+const variant={
+  hidden: {y:-50, opacity:0},
+  show: {
+    y:0,
+    opacity:1,
+    transition: {
+      staggerChildren: 0.15,
+      staggerDirection: -1,
+      duration:1.2,
+    },
+  },
+};
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -13,14 +27,18 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className='hidden md:flex font-sf-mono-sb text-xs'>
-            <li className='flex pr-3 my-auto'><h1 className='text-highlight'>01.</h1>About</li>
-            <li className='flex px-3 my-auto'><h1 className='text-highlight'>02.</h1>Skills & Tools</li>
-            <li className='flex px-3 my-auto'><h1 className='text-highlight'>03.</h1>Experience</li>
-            <li className='flex px-3 my-auto'><h1 className='text-highlight'>04.</h1>Projects</li>
-            <li className='flex pl-3 pr-5 my-auto'><h1 className='text-highlight'>05.</h1>Contact</li>
-            <button className='border-2 rounded-md px-3 py-2 text-center text-highlight border-highlight hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200'>Resume</button>
-        </ul>
+        <motion.ul className='hidden md:flex font-sf-mono-sb text-xs'
+                   variants={variant}
+                   initial="hidden"
+                   animate="show"
+                   >
+            <motion.li className='flex pr-3 my-auto' variants={variant}><h1 className='text-highlight'>01.</h1>About</motion.li>
+            <motion.li className='flex px-3 my-auto' variants={variant}><h1 className='text-highlight'>02.</h1>Skills & Tools</motion.li>
+            <motion.li className='flex px-3 my-auto' variants={variant}><h1 className='text-highlight'>04.</h1>Projects</motion.li>
+            <motion.li className='flex px-3 my-auto' variants={variant}><h1 className='text-highlight'>03.</h1>Experience</motion.li>
+            <motion.li className='flex pl-3 pr-5 my-auto' variants={variant}><h1 className='text-highlight'>05.</h1>Contact</motion.li>
+            <motion.button className='border-2 rounded-md px-3 py-2 text-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200' variants={variant}>Resume</motion.button>
+        </motion.ul>
 
         {/* Hamburger */}
         <div onClick={handleClick} className='md:hidden z-10'>
