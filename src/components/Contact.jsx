@@ -1,10 +1,32 @@
 import React from 'react'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 // import { ReactComponent as LinkedIn } from '../assets/social_icons/LinkedIn_Rounded.svg';
 // import { ReactComponent as Github } from '../assets/social_icons/Github_Rounded.svg';
 // import { ReactComponent as Email } from '../assets/social_icons/Email_Rounded.svg';
 // import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounded.svg';
 
+const variant = {
+    hidden: { y:50, opacity:0 },
+    visible: { y:0, opacity:1, transition:{staggerchildren:0.2} },
+  }
+
+const item = {
+  hidden: { opacity:0 },
+  visible: {opacity:1 },
+}
+
 const Contact = () => {
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+          control.start("visible");
+        } 
+      }, [control, inView]);
   return (
     <div name='Contact' className='w-full h-screen bg-background flex justify-center items-center p-6 text-gray-300'>
         <div className='mx-auto p-4 flex flex-col justify-center w-full h-full px-10'>

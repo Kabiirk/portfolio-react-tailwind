@@ -1,7 +1,32 @@
 import React from 'react'
 import ProjectCard from '../subcomponents/ProjectCard'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const variant = {
+  hidden: { y:50, opacity:0 },
+  visible: { y:0, opacity:1, transition:{
+    staggerChildren: 0.2,
+    duration:1.2,
+  } },
+}
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 }
+}
 
 const Projects = () => {
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } 
+    }, [control, inView]);
+
     const Project_Data = [
         {
           id : 1,
@@ -55,15 +80,19 @@ const Projects = () => {
                 <p className='font-sf-mono-sb text-xs'>Check out more of my work on <a href="https://github.com/" className='text-highlight'><u>github</u></a> </p>
             </div>
 
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 p-12'>
+            <motion.div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 p-12'
+                        ref={ref}
+                        variants={variant}
+                        initial='hidden'
+                        animate={control}>
                 { Project_Data.map( (data) =>{
                     return(
-                        <ProjectCard key={data.id} title={data.title} url={data.url} description={data.description} stack={data.stack} />
+                        <ProjectCard variants={item} key={data.id} title={data.title} url={data.url} description={data.description} stack={data.stack} />
                     );
                 }
                  )
                 }
-            </div>
+            </motion.div>
         </div>
     </div>
   )

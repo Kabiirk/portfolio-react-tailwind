@@ -22,9 +22,9 @@ const Hero = () => {
     <div name='hero' className='w-full h-screen bg-background flex'>
         {/* Left Socials */}
         <div className='ml-10 my-auto flex-col invisible sm:visible'>
-          <a href="/"><Github className='w-5 pb-2 fill-heading hover:fill-[#64ffda] hover:duration-200'/></a>
-          <a href="/"><LinkedIn className='w-5 py-2 fill-heading hover:fill-[#64ffda] hover:duration-200'/></a>
-          <a href="/"><Behance className='w-5 pt-2 fill-heading hover:fill-[#64ffda] hover:duration-200'/></a>
+          <a href="/"><Github className='w-5 pb-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
+          <a href="/"><LinkedIn className='w-5 py-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
+          <a href="/"><Behance className='w-5 pt-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
         </div>
 
         {/* Container */}

@@ -1,13 +1,28 @@
 import React from 'react'
-import { useState } from 'react'
 import Jobs from '../subcomponents/Jobs';
+import { useState, useEffect } from 'react'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const variant = {
+  hidden: { y:50, opacity:0 },
+  visible: { y:0, opacity:1, transition:{delay:0.2, duration:0.5} },
+}
 
 const Experience = () => {
   const [togglestate, settogglestate] = useState(1);
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   const toggleTab = (index) => {
     settogglestate(index);
   }
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } 
+  }, [control, inView]);
 
   const Job_Data = [
     {
@@ -87,7 +102,10 @@ const Experience = () => {
 
   return (
     <div name='about' className='w-full h-screen bg-background text-gray-300'>
-        <div className='flex flex-col justify-center items-center w-full h-full'>
+        <motion.div className='flex flex-col justify-center items-center w-full h-full'
+                    variants={variant}
+                    initial='hidden'
+                    animate={control}>
           <div className='max-w-[800px] w-full grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
               <p className='text-3xl inline font-calibre-sb'>
@@ -97,7 +115,9 @@ const Experience = () => {
           </div>
 
           {/* Tabs */}
-          <div className='max-w-[800px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
+          {/* Putting ref here to trigger animation when
+              proper amount of section is in view */}
+          <div ref={ref} className='max-w-[800px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
               <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll col-span-1 sm:col-span-1 font-sf-mono-re custom-scroll mr-10'>
                   {/* <div className={ togglestate===1 ? 'bg-blue-500' : 'bg-red-400'} onClick={() => toggleTab(1)}>PwC India</div>
                   <div className={ togglestate===2 ? 'bg-blue-500' : 'bg-red-500'} onClick={() => toggleTab(2)}>IIT-Roorkee</div>
@@ -136,7 +156,7 @@ const Experience = () => {
               </div>
             </div>
 
-        </div>
+        </motion.div>
       </div>
   )
 }

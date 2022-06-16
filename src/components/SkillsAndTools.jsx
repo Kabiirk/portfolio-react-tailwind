@@ -4,8 +4,8 @@ import React from 'react'
 const SkillsAndTools = () => {
   return (
     <div name='skills' className='w-full h-screen bg-background text-heading'>
-    {/* Container */}
-    <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full'>
+      {/* Container */}
+      <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full'>
         <div className='text-center pb-8'>
             <p className='text-3xl inline font-calibre-sb'>Skills & Tools</p>
         </div>
@@ -43,7 +43,7 @@ const SkillsAndTools = () => {
         <div className='w-full grid md:grid-cols-4 gap-4 grid-cols-1 text-center'>
             {/* Skills */}
             <div className='text-left col-span-1 '>
-                <p className='font-calibre-re'>Skills</p>
+                <p className='font-calibre-re'>My Skills</p>
                 <ul className='font-sf-mono-re text-xs'>
                     <li className='styled-bullets'>Data Engineering</li>
                     <li className='styled-bullets'>Data Visualization</li>
@@ -55,7 +55,7 @@ const SkillsAndTools = () => {
 
             {/* Technologies */}
             <div className='text-left col-span-3'>
-                <p className='font-calibre-re'>Technologies I have worked with</p>
+                <p className='font-calibre-re'>My Toolbox</p>
                 <div className='grid sm:grid-cols-1 md:grid-cols-3 '>
                     <div>
                         <ul className='font-sf-mono-re text-xs '>

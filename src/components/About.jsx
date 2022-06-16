@@ -5,9 +5,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const imagevariant = {
+const variant = {
   hidden: { y:50, opacity:0 },
-  visible: { y:0, opacity:1, transition:{duration:0.6} },
+  visible: { y:0, opacity:1, transition:{delay:0.2, duration:0.5} },
 }
 
 const About = () => {
@@ -22,7 +22,11 @@ const About = () => {
 
     return (
       <div name='about' className='w-full h-screen bg-background text-heading'>
-        <div className='flex flex-col justify-center items-center w-full h-full '>
+        <motion.div className='flex flex-col justify-center items-center w-full h-full '
+                    ref={ref}
+                    variants={variant}
+                    initial='hidden'
+                    animate={control}>
           <div className='max-w-[800px] w-full grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
               <p className='text-3xl inline font-calibre-sb'>
@@ -30,11 +34,7 @@ const About = () => {
               </p>
             </div>
           </div>
-            <motion.div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-4 px-4'
-                        ref={ref}
-                        variants={imagevariant}
-                        initial='hidden'
-                        animate={control}>
+            <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-4 px-4'>
               <div className='content-right'>
                 {/* <img src={Name_Logo} alt="My pic" className='mx-auto'/> */}
                 {/* <svg className='w-[16%] mx-auto' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M5,0H45a5,5,0,0,1,5,5V45a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" fill="#64ffda" fill-rule="evenodd"/><g style={{isolation:"isolate"}}><g style={{isolation:"isolate"}}><path d="M21.33,23.92l8.08-9.67h5.43l-8.19,9.63,8.5,11.87H29.73L23.36,27l-2,2.42v6.37H16.85V14.25h4.48Z" fill="#0a192f"/></g></g></g></g></svg> */}
@@ -59,8 +59,8 @@ const About = () => {
                 <button className='border-2 rounded-md px-6 py-3 text-sm font-sf-mono-re justified-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'>Download my Resume !</button>
                 </div>
               </div>
-            </motion.div>
-        </div>
+            </div>
+        </motion.div>
       </div>
     );
   };

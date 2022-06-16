@@ -8,11 +8,11 @@ const Jobs = (props) => {
           <span className='text-highlight'> @ {props.org} </span>
         </div>
         <p className='font-sf-mono-re text-xs text-subheading pb-6'>{props.duration}</p>
-        <p className={ props.para==='' ? 'hidden' : 'font-calibre-re text-subheading text-base pb-2'} >{props.para}</p>
+        <p className={ props.para==='' ? 'hidden' : 'font-calibre-re text-subheading text-base pb-1'} >{props.para}</p>
         <ul className='font-calibre-re text-subheading text-base'>
             { props.points.map( (point, index) =>{
                 return(
-                    <li key={index} className='styled-bullets pb-2' >{point}</li>
+                    <li key={index} className='styled-bullets pb-1' >{point}</li>
                     );
                 }
               )
