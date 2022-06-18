@@ -21,13 +21,13 @@ const About = () => {
     }, [control, inView]);
 
     return (
-      <div name='about' className='w-full h-screen bg-background p-4 text-heading'>
+      <div name='about' className='w-full h-full flex-col bg-background p-4 text-heading'>
         <motion.div className='max-w-[800px] mx-auto flex flex-col justify-center items-center'
                     ref={ref}
                     variants={variant}
                     initial='hidden'
                     animate={control}>
-          <div className='max-w-[800px] w-full grid grid-cols-1'>
+          <div className='max-w-[800px] grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
               <p className='text-3xl inline font-calibre-sb'>
                 About Me

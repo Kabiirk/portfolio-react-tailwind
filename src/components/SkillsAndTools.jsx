@@ -5,7 +5,7 @@ const SkillsAndTools = () => {
   return (
     <div name='skills' className='w-full h-screen bg-background text-heading'>
       {/* Container */}
-      <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full'>
+      <div className='max-w-[800px] mx-auto p-4 flex flex-col justify-center items-center h-full'>
         <div className='text-center pb-8'>
             <p className='text-3xl inline font-calibre-sb'>Skills & Tools</p>
         </div>
