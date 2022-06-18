@@ -4,7 +4,7 @@ import Name_Logo from '../assets/Name_Logo.png'
 const ProjectCard = (props) => {
   var tech_stack = props.stack.map((item,index) => <div key={index}>{item}</div> )
   return (
-    <div className='group rounded bg-card py-[2rem] px-[1.75rem] transition ease-in hover:translate-y-[-0.25rem] hover:duration-200'>
+    <div className='h-full w-full group rounded bg-card py-[2rem] px-[1.75rem] transition ease-in hover:translate-y-[-0.25rem] hover:duration-200'>
       {/*
         Why rel="noopener noreferrer" ?
         Ref.:

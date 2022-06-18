@@ -32,11 +32,11 @@ const Navbar = () => {
                    initial="hidden"
                    animate="show"
                    >
-            <motion.li className='flex pr-3 my-auto' variants={variant}><h1 className='text-highlight'>01.</h1>About</motion.li>
-            <motion.li className='flex px-3 my-auto' variants={variant}><h1 className='text-highlight'>02.</h1>Skills & Tools</motion.li>
-            <motion.li className='flex px-3 my-auto' variants={variant}><h1 className='text-highlight'>04.</h1>Projects</motion.li>
-            <motion.li className='flex px-3 my-auto' variants={variant}><h1 className='text-highlight'>03.</h1>Experience</motion.li>
-            <motion.li className='flex pl-3 pr-5 my-auto' variants={variant}><h1 className='text-highlight'>05.</h1>Contact</motion.li>
+            <motion.li className='flex pr-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>01.</span>About</motion.li>
+            <motion.li className='flex px-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>02.</span>Skills & Tools</motion.li>
+            <motion.li className='flex px-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>04.</span>Projects</motion.li>
+            <motion.li className='flex px-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>03.</span>Experience</motion.li>
+            <motion.li className='flex pl-3 pr-5 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>05.</span>Contact</motion.li>
             <motion.button className='border-2 rounded-md px-3 py-2 text-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200' variants={variant}>Resume</motion.button>
         </motion.ul>
 

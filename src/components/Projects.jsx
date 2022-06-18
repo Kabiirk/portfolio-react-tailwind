@@ -8,13 +8,8 @@ const variant = {
   hidden: { y:50, opacity:0 },
   visible: { y:0, opacity:1, transition:{
     staggerChildren: 0.2,
-    duration:1.2,
+    duration:1,
   } },
-}
-
-const item = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 }
 }
 
 const Projects = () => {
@@ -87,7 +82,10 @@ const Projects = () => {
                         animate={control}>
                 { Project_Data.map( (data) =>{
                     return(
-                        <ProjectCard variants={item} key={data.id} title={data.title} url={data.url} description={data.description} stack={data.stack} />
+                      // Alternative is using forwardref() as per framer documentation
+                      <motion.div key={data.id} variants={variant}>
+                        <ProjectCard title={data.title} url={data.url} description={data.description} stack={data.stack} />
+                      </motion.div>
                     );
                 }
                  )

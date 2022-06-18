@@ -11,8 +11,20 @@ const variant={
     y:0,
     opacity:1,
     transition: {
-      delay:2,
-      duration:0.5,
+      staggerChildren:0.5,
+      // delay:1.7,
+      duration:1,
+    },
+  },
+};
+
+const itemvariant={
+  hidden: {y:50, opacity:0},
+  show: {
+    y:0,
+    opacity:1,
+    transition: {
+      duration:1,
     },
   },
 };
@@ -33,12 +45,12 @@ const Hero = () => {
                     initial="hidden"
                     animate="show"
                     >
-            <p className='text-highlight text-sm pb-4 font-sf-mono-re'>Hi, my name is</p>
-            <h1 className='text-3xl sm:text-5xl font-calibre-sb text-heading py-2'>Kabiir Krishna</h1>
-            <h2 className='text-3xl sm:text-5xl font-calibre-sb text-subheading pt-2'>I build awesome things.</h2>
-            <div className='pt-6'>
+            <motion.p variants={variant} className='text-highlight text-sm pb-4 font-sf-mono-re'>Hi, my name is</motion.p>
+            <motion.h1 variants={variant} className='text-3xl sm:text-5xl font-calibre-sb text-heading py-2'>Kabiir Krishna</motion.h1>
+            <motion.h2 variants={variant} className='text-3xl sm:text-5xl font-calibre-sb text-subheading pt-2'>I build awesome things.</motion.h2>
+            <motion.div variants={variant} className='pt-6'>
                 <button className='text-sm rounded-md flex items-center px-6 py-3 font-sf-mono-re border-2 text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'>Check out my website !</button>
-            </div>
+            </motion.div>
         </motion.div>
 
         {/* Right Email */}

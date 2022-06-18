@@ -21,8 +21,8 @@ const About = () => {
     }, [control, inView]);
 
     return (
-      <div name='about' className='w-full h-screen bg-background text-heading'>
-        <motion.div className='flex flex-col justify-center items-center w-full h-full '
+      <div name='about' className='w-full h-screen bg-background p-4 text-heading'>
+        <motion.div className='max-w-[800px] mx-auto flex flex-col justify-center items-center'
                     ref={ref}
                     variants={variant}
                     initial='hidden'
@@ -36,9 +36,7 @@ const About = () => {
           </div>
             <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-4 px-4'>
               <div className='content-right'>
-                {/* <img src={Name_Logo} alt="My pic" className='mx-auto'/> */}
-                {/* <svg className='w-[16%] mx-auto' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M5,0H45a5,5,0,0,1,5,5V45a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" fill="#64ffda" fill-rule="evenodd"/><g style={{isolation:"isolate"}}><g style={{isolation:"isolate"}}><path d="M21.33,23.92l8.08-9.67h5.43l-8.19,9.63,8.5,11.87H29.73L23.36,27l-2,2.42v6.37H16.85V14.25h4.48Z" fill="#0a192f"/></g></g></g></g></svg> */}
-                <img src={profile} alt="Me !" title="Smiley face" className='mx-auto rounded-md w-[85%]'/>
+                <img src={profile} alt="Me !" title="Me !" className='mx-auto rounded-md w-[85%]'/>
               </div>
               <div className='font-calibre-re text-base'>
                 <p>
