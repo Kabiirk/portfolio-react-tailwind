@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 /* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 @font-face {
     font-family: 'calibre-re';
     src: url('./fonts/calibre/CalibreRegular.otf');
