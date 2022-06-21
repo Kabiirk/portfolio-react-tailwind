@@ -1,11 +1,27 @@
 import React from 'react'
 // import Name_Logo from '../assets/Name_Logo.png'
 
+const variant={
+    hidden: {y:50, opacity:0},
+    show: {
+      y:0,
+      opacity:1,
+      transition: {
+        staggerChildren:0.2,
+        // delay:2.5,
+        duration:1,
+      },
+    },
+  };
+
 const SkillsAndTools = () => {
   return (
     <div name='skills' className='w-full h-screen bg-background text-heading'>
       {/* Container */}
-      <div className='max-w-[800px] h-screen mx-auto p-4 flex flex-col justify-center items-center'>
+      <motion.div className='max-w-[800px] h-screen mx-auto p-4 flex flex-col justify-center items-center'
+                variants={variant}
+                initial="hidden"
+                animate="show">
         <div className='text-center pb-8'>
             <p className='text-3xl inline font-calibre-sb'>Skills & Tools</p>
         </div>
@@ -88,7 +104,7 @@ const SkillsAndTools = () => {
 
         </div>
 
-    </div>
+    </motion.div>
   </div>
   )
 }
