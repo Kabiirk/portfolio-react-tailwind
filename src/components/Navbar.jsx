@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className='bg-opacity-70 bg-[#0a192f] backdrop-filter backdrop-blur-md fixed w-full h-13 flex justify-between items-center px-10 text-gray-300 z-50'>
         <div variants={variant}>
             <a href="/">
-            <motion.img src={Name_Logo} alt='Logo' className='w-8 my-5'
+            <motion.img width="50" height="51" src={Name_Logo} alt='Logo' className='w-8 my-5'
                         initial={{opacity:0}}
                         animate={{opacity:1}}
                         transition={{duration:1.2}}/>

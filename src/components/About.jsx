@@ -36,7 +36,7 @@ const About = () => {
           </div>
             <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-4 px-4'>
               <div className='content-right'>
-                <img src={profile} alt="Me !" title="Me !" className='mx-auto rounded-md w-[85%]'/>
+                <img src={profile} width="1001" height="1075" alt="Me !" title="Me !" className='mx-auto rounded-md w-[85%]'/>
               </div>
               <div className='font-calibre-re text-base'>
                 <p>

@@ -1,9 +1,13 @@
 import React from 'react'
 // import Name_Logo from '../assets/Name_Logo.png'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 
 const variant={
     hidden: {y:50, opacity:0},
-    show: {
+    visible: {
       y:0,
       opacity:1,
       transition: {
@@ -15,13 +19,23 @@ const variant={
   };
 
 const SkillsAndTools = () => {
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } 
+    }, [control, inView]);
+
   return (
-    <div name='skills' className='w-full h-screen bg-background text-heading'>
+    <div name='skills' className='w-full flex h-screen bg-background text-heading'>
       {/* Container */}
-      <motion.div className='max-w-[800px] h-screen mx-auto p-4 flex flex-col justify-center items-center'
+      <motion.div className='max-w-[800px] m-auto p-4 flex flex-col justify-center items-center'
+                ref={ref}
                 variants={variant}
                 initial="hidden"
-                animate="show">
+                animate={control}>
         <div className='text-center pb-8'>
             <p className='text-3xl inline font-calibre-sb'>Skills & Tools</p>
         </div>
@@ -101,9 +115,7 @@ const SkillsAndTools = () => {
                     </div>
                 </div>
             </div>
-
         </div>
-
     </motion.div>
   </div>
   )
