@@ -30,12 +30,13 @@
 }
 
 /* Some ad hoc CSS */
-@layer base {
-    /* li {
+
+/* @layer base {
+    li {
         @apply pb-1;
         @apply cursor-pointer;
-    } */
-}
+    }
+} */
 
 .write-mode-vertical{
     writing-mode: vertical-rl;
