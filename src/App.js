@@ -6,11 +6,17 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import SkillsAndTools from "./components/SkillsAndTools";
 import Experience from "./components/Experience";
+import {useState} from "react"
 
 function App() {
-  return (
+  const [loading, setloading] = useState(true)
+
+  setTimeout(() => {
+    setloading(false);
+  }, 2000);
+
+  return ( loading ? <Splash /> :
     <div>
-      {/* <Splash /> */}
       <Navbar />
       <Hero />
       <About />

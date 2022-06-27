@@ -2,44 +2,17 @@ import React from 'react'
 // import Name_Logo from '../assets/Name_Logo.png'
 // import { ReactComponent as LinkedIn } from '../assets/social_icons/LinkedIn_Rounded.svg';
 // import { ReactComponent as Github } from '../assets/social_icons/Github_Rounded.svg';
-// import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounded.svg';
+import { ReactComponent as NameLogo } from '../assets/NameLogo.svg';
 import { motion } from 'framer-motion';
-
-const variantleftsocial={
-  hidden: {x:-30, opacity:0},
-  show: {
-    x:0,
-    opacity:1,
-    transition: {
-      staggerChildren:0.5,
-      // delay:2,
-      duration:1,
-    },
-  },
-};
 
 
 const variant={
-  hidden: {y:50, opacity:0},
+  hidden: {y:75, opacity:0},
   show: {
     y:0,
     opacity:1,
     transition: {
-      staggerChildren:0.2,
       // delay:2.5,
-      duration:1,
-    },
-  },
-};
-
-const variantrightsocial={
-  hidden: {x:30, opacity:0},
-  show: {
-    x:0,
-    opacity:1,
-    transition: {
-      staggerChildren:0.5,
-      // delay:3,
       duration:1,
     },
   },
@@ -47,7 +20,12 @@ const variantrightsocial={
 
 const Hero = () => {
   return (
-    <div name='hero' className='w-full h-screen bg-background flex'>
+    <div name='hero' className='w-full h-screen bg-background flex items-center justify-center'>
+      <motion.div variants={variant}
+                  initial="hidden"
+                  animate="show">
+        <NameLogo className='h-20' />
+      </motion.div>
         {/* Left Socials */}
         {/* <div className='ml-10 my-auto flex-col invisible sm:visible'>
           <a href="/"><Github className='w-5 pb-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
