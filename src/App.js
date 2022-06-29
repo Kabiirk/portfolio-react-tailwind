@@ -9,13 +9,13 @@ import Experience from "./components/Experience";
 import {useState} from "react"
 
 function App() {
-  const [loading, setloading] = useState(true)
+  // const [loading, setloading] = useState(true)
 
-  setTimeout(() => {
-    setloading(false);
-  }, 2000);
+  // setTimeout(() => {
+  //   setloading(false);
+  // }, 2000);
 
-  return ( loading ? <Splash /> :
+  return ( //loading ? <Splash /> :
     <div>
       <Navbar />
       <Hero />
