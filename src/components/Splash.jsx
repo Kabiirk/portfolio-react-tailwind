@@ -1,7 +1,6 @@
 import React from 'react'
 import { ReactComponent as NameLogo } from '../assets/NameLogo.svg';
 // import { motion } from 'framer-motion';
-import { useEffect, useState } from "react";
 
 // const variant={
 //   hidden: {y:75, opacity:0},
@@ -17,9 +16,7 @@ import { useEffect, useState } from "react";
 
 const Splash = () => {
   return (
-      <div>
         <NameLogo className='h-20' />
-      </div>
   )
 }
 
