@@ -29,7 +29,7 @@ const SkillsAndTools = () => {
     }, [control, inView]);
 
   return (
-    <div name='skills' className='w-full flex h-screen bg-background text-heading'>
+    <div name='skills' className='w-full h-screen flex bg-background text-heading'>
       {/* Container */}
       <motion.div className='max-w-[800px] m-auto p-4 flex flex-col justify-center items-center'
                 ref={ref}
@@ -70,7 +70,7 @@ const SkillsAndTools = () => {
         </div>
 
         {/* Skills */}
-        <div className='w-full grid md:grid-cols-4 gap-4 grid-cols-1 text-center'>
+        <div className='grid md:grid-cols-4 gap-4 grid-cols-1 text-center'>
             {/* Skills */}
             <div className='text-left col-span-1 '>
                 <p className='font-calibre-re'>My Skills</p>

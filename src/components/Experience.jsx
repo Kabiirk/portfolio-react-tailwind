@@ -106,7 +106,7 @@ const Experience = () => {
                     variants={variant}
                     initial='hidden'
                     animate={control}>
-          <div className='max-w-[800px] w-full grid grid-cols-1'>
+          <div className='max-w-[800px] grid grid-cols-1'>
             <div className='text-center pb-8 pl-4'>
               <p className='text-3xl inline font-calibre-sb'>
                 Experience

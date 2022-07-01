@@ -21,7 +21,7 @@ const About = () => {
     }, [control, inView]);
 
     return (
-      <div name='about' className='w-full h-full flex-col bg-background p-4 text-heading'>
+      <div name='about' className='w-full h-screen flex-col bg-background p-4 text-heading'>
         <motion.div className='max-w-[800px] mx-auto flex flex-col justify-center items-center'
                     ref={ref}
                     variants={variant}

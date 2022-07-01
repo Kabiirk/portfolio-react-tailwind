@@ -10,7 +10,6 @@ const variant={
     transition: {
       staggerChildren: 0.15,
       staggerDirection: -1,
-      duration:1.2,
     },
   },
 };
