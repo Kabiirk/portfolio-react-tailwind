@@ -16,8 +16,7 @@ function App() {
     setloading(false);
   }, 2000);
 
-  return (
-      loading ?
+  return ( loading ?
       <div className='w-full h-screen bg-background flex items-center justify-center'>
           <motion.div key={1} initial={ {y:75, opacity:0} }
                       animate={ {y:0, opacity:1, transition: {duration:1} } }

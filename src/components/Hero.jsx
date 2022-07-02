@@ -5,14 +5,20 @@ import React from 'react'
 // import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounded.svg';
 import { motion } from 'framer-motion';
 
+const mainvariant = {
+  transition: {
+    staggerChildren:0.5,
+  }
+}
+
 const variantleftsocial={
   hidden: {x:-30, opacity:0},
   show: {
     x:0,
     opacity:1,
     transition: {
-      staggerChildren:0.5,
-      // delay:2,
+      // delay:1,
+      staggerChildren:0.2,
       duration:1,
     },
   },
@@ -47,14 +53,8 @@ const variantrightsocial={
 
 const Hero = () => {
   return (
-    <div name='hero' className='w-full h-screen bg-background flex'>
+    <motion.div name='hero' className='w-full h-screen bg-background flex'>
         {/* Left Socials */}
-        {/* <div className='ml-10 my-auto flex-col invisible sm:visible'>
-          <a href="/"><Github className='w-5 pb-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
-          <a href="/"><LinkedIn className='w-5 py-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
-          <a href="/"><Behance className='w-5 pt-2 fill-subheading hover:fill-heading hover:duration-200'/></a>
-        </div> */}
-        {/* Left Socials with SVGs */}
         <motion.div className='ml-10 my-auto flex-col invisible sm:visible'
                     variants={variantleftsocial}
                     initial="hidden"
@@ -94,7 +94,7 @@ const Hero = () => {
                     animate="show">
           <a className='font-sf-mono-re text-sm' href="mailto:kabiirk@gmail.com">kabiirk@gmail.com</a>
         </motion.div>
-    </div>
+    </motion.div>
   )
 }
 
