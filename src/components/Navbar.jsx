@@ -3,12 +3,12 @@ import Name_Logo from '../assets/Name_Logo.png'
 import { motion } from 'framer-motion';
 
 const variant={
-  hidden: {y:-50, opacity:0},
+  hidden: {translateY:-50, opacity:0},
   show: {
-    y:0,
+    translateY:0,
     opacity:1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.2,
       staggerDirection: -1,
     },
   },
