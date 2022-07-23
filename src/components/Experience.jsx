@@ -101,8 +101,8 @@ const Experience = () => {
   ];
 
   return (
-    <div name='about' className='w-full h-screen bg-background text-gray-300'>
-        <motion.div className='flex flex-col justify-center items-center w-full h-full'
+    <div name='about' className='w-full h-screen flex bg-background text-gray-300'>
+        <motion.div className='max-w-[800px] p-4 m-auto flex flex-col justify-center items-center'
                     variants={variant}
                     initial='hidden'
                     animate={control}>
@@ -119,12 +119,6 @@ const Experience = () => {
               proper amount of section is in view */}
           <div ref={ref} className='max-w-[800px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
               <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll col-span-1 sm:col-span-1 font-sf-mono-re custom-scroll mr-10'>
-                  {/* <div className={ togglestate===1 ? 'bg-blue-500' : 'bg-red-400'} onClick={() => toggleTab(1)}>PwC India</div>
-                  <div className={ togglestate===2 ? 'bg-blue-500' : 'bg-red-500'} onClick={() => toggleTab(2)}>IIT-Roorkee</div>
-                  <div className={ togglestate===3 ? 'bg-blue-500' : 'bg-red-600'} onClick={() => toggleTab(3)}>IBM</div>
-                  <div className={ togglestate===4 ? 'bg-blue-500' : 'bg-red-700'} onClick={() => toggleTab(4)}>Deloitte</div>
-                  <div className={ togglestate===5 ? 'bg-blue-500' : 'bg-red-800'} onClick={() => toggleTab(5)}>Microsoft SP</div>
-                  <div className={ togglestate===6 ? 'bg-blue-500' : 'bg-red-900'} onClick={() => toggleTab(6)}>CSI-VIT</div> */}
                   { Job_Data.map( (data) =>{
                     return(
                       // <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
@@ -154,7 +148,7 @@ const Experience = () => {
                   )
                 }
               </div>
-            </div>
+          </div>
 
         </motion.div>
       </div>
