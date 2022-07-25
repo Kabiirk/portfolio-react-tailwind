@@ -68,8 +68,8 @@ const Projects = () => {
       ];
 
   return (
-    <div name="Projects" className='w-full md:h-screen text-gray-300 bg-background'>
-        <div className='max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full'>
+    <div name="Projects" className='w-full h-full text-gray-300 bg-background'>
+        <div className='max-w-[1000px] mx-auto flex flex-col justify-center'>
             <div className='text-center'>
                 <p className='text-3xl font-calibre-sb'>Projects</p>
                 <p className='font-sf-mono-sb text-xs'>Check out more of my work on <a href="https://github.com/" className='text-highlight'><u>github</u></a> </p>
