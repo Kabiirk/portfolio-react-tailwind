@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import SkillsAndTools from "./components/SkillsAndTools";
 import Experience from "./components/Experience";
 import {useState} from "react"
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function App() {
   const [loading, setloading] = useState(true)
@@ -32,7 +32,7 @@ function App() {
       <SkillsAndTools />
       <Experience />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

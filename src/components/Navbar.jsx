@@ -8,7 +8,7 @@ const variant={
     translateY:0,
     opacity:1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
       staggerDirection: -1,
     },
   },
@@ -36,10 +36,10 @@ const Navbar = () => {
                    initial="hidden"
                    animate="show"
                    >
-            <motion.li className='flex pr-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>01.</span>About</motion.li>
-            <motion.li className='flex px-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>02.</span>Skills & Tools</motion.li>
-            <motion.li className='flex px-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>04.</span>Projects</motion.li>
-            <motion.li className='flex px-3 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>03.</span>Experience</motion.li>
+            <motion.li className='flex pr-3 my-auto hover:text-highlight hover:cursor-pointer duration-200' variants={variant}><span className='text-highlight'>01.</span>About</motion.li>
+            <motion.li className='flex px-3 my-auto hover:text-highlight hover:cursor-pointer duration-200' variants={variant}><span className='text-highlight'>02.</span>Skills & Tools</motion.li>
+            <motion.li className='flex px-3 my-auto hover:text-highlight hover:cursor-pointer duration-200' variants={variant}><span className='text-highlight'>04.</span>Projects</motion.li>
+            <motion.li className='flex px-3 my-auto hover:text-highlight hover:cursor-pointer duration-200' variants={variant}><span className='text-highlight'>03.</span>Experience</motion.li>
             <motion.li className='flex pl-3 pr-5 my-auto hover:text-highlight duration-200' variants={variant}><span className='text-highlight'>05.</span>Contact</motion.li>
             <motion.button className='border-2 rounded-md px-3 py-2 text-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200' variants={variant}>Resume</motion.button>
         </motion.ul>
@@ -58,8 +58,8 @@ const Navbar = () => {
             <li className='flex py-3 text-2xl font-sf-mono-sb'><h1 className='text-highlight'>02.</h1>Skills & Tools</li>
             <li className='flex py-3 text-2xl font-sf-mono-sb'><h1 className='text-highlight'>03.</h1>Experience</li>
             <li className='flex py-3 text-2xl font-sf-mono-sb'><h1 className='text-highlight'>04.</h1>Projects</li>
-            <li className='flex py-3 text-2xl font-sf-mono-sb'><h1 className='text-highlight'>05.</h1>Contacts</li>
-            <button className='text-2xl border-2 rounded-md px-3 py-2 text-center font-sf-mono-sb'>Resume</button>
+            <li className='flex pt-3 text-2xl font-sf-mono-sb pb-5'><h1 className='text-highlight'>05.</h1>Contacts</li>
+            <button className='text-2xl border-2 rounded-md px-3 py-3 text-center text-highlight border-highlight font-sf-mono-sb'>Resume</button>
         </ul>
     </div>
   )

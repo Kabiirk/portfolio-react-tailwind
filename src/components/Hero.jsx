@@ -9,8 +9,9 @@ const main = {
   hidden: {},
   show: {
     transition: {
-      delayChildren: 2,
-      staggerChildren: 3,
+      // delayChildren: 0.75,
+      staggerChildren: 0.25,
+      duration:0.5,
       // staggerChildren:0.5,
     },
   },
@@ -22,8 +23,8 @@ const left = {
     x:0,
     opacity:1,
     transition: {
-      delayChildren: 1.5,
-      staggerChildren:0.5,
+      delayChildren: 3,
+      staggerChildren:0.25,
       duration:0.5,
       // delay:1.5,
     },
@@ -37,7 +38,7 @@ const right = {
     opacity:1,
     transition: {
       duration:0.5,
-      delay: 3,
+      delay: 4,
     },
   },
 }
@@ -48,9 +49,9 @@ const center = {
     translateY:0,
     opacity:1,
     transition: {
-      delayChildren: 3.5,
+      delayChildren: 1.25,
       staggerChildren:0.5,
-      duration:0.75,
+      // duration:0.75,
       // delay:2.5,
     },
   },

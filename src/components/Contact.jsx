@@ -31,8 +31,8 @@ const Contact = () => {
       }, [control, inView]);
 
   return (
-    <div name='Contact' className='w-full h-screen bg-background flex justify-center items-center p-6 text-gray-300'>
-        <div className='mx-auto p-4 flex flex-col justify-center w-full h-full px-10'>
+    <div name='Contact' className='w-full h-screen bg-background flex flex-col justify-center items-center p-6 text-gray-300'>
+        <div className='m-auto p-4 px-10'>
             <motion.div className='text-center'
             ref={ref}
             initial="hidden"
@@ -66,11 +66,6 @@ const Contact = () => {
                     <motion.svg variants={variant} className='h-[100px] py-4 px-10 fill-heading hover:fill-highlight hover:duration-200' 
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350.33 350.14"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Behance_Matched_corners" data-name="Behance Matched corners"><path d="M.05,79.11V271c0-.08,0-.16,0-.23V79.32C0,79.25,0,79.18.05,79.11Z"/><path d="M350.27,205.16q0-43.18,0-86.37Q350.43,162,350.27,205.16Z"/><path d="M350.26,118.79q0-26.72,0-53.42A65.26,65.26,0,0,0,297.1,1.11,67.88,67.88,0,0,0,284.2.05Q225.63,0,167.05,0q-21,0-41.9,0Q95.6,0,66.06,0c-32,0-58.41,21.6-64.89,52.84C.81,54.62.42,56.37.05,58.12V292c1,4.28,1.58,8.72,3.11,12.8,9.32,25,26.75,40.45,53.49,44.71a7.2,7.2,0,0,1,1.54.62H292.13c4.6-1.14,9.33-1.93,13.79-3.47a65.12,65.12,0,0,0,44.31-61.85q0-39.83,0-79.66Q350.29,162,350.26,118.79ZM206,111.56h57.59v13.53H206ZM173.69,223.64C167.63,237,156,243.32,142.2,246.21a38.58,38.58,0,0,1-7.79.87c-21.66.07-43.32,0-65,0-.68,0-1.35-.09-2.46-.16V103.36a16.19,16.19,0,0,1,2.3-.34c23.14,0,46.29-.13,69.42.26,19.77.33,33.21,13.37,34.47,33a52.07,52.07,0,0,1-.85,13.54c-1.83,8.93-7.38,14.26-17.28,17.46a10.15,10.15,0,0,0,1.9.68c8.2,1,14,5.51,17.12,12.94C180,195.11,180.07,209.62,173.69,223.64Zm89.73,18.5c-18.93,8.72-38.2,8.93-56.78-1.14-12-6.48-18.07-17.66-21-30.56a66.13,66.13,0,0,1,6.62-47.57c7.76-14.24,20.08-21.8,36.16-23.58,8.73-1,17.31-.66,25.62,2.26,14.21,5,22.22,15.62,26.34,29.61,2.49,8.49,2.92,17.22,2.87,26,0,2.78-1.51,2.75-3.49,2.74q-31.27,0-62.57,0H213c-1.22,17.42,11.33,28.3,28.79,25.42a32.44,32.44,0,0,0,8.45-2.46c5-2.35,6.27-4.41,8.47-11.41h23C282.78,224.19,276.1,236.29,263.42,242.14Z"/><path d="M135,219.42c6.41-.1,11.86-4.2,13.15-10.47a42.08,42.08,0,0,0,.7-14.82c-1.51-9.34-8-14-16.64-13.65-10.35.39-20.73.09-31.1.09H97.32v38.9C110.13,219.47,122.54,219.61,135,219.42Z"/><path d="M135.7,158.25a8,8,0,0,0,7.71-5.78,27.18,27.18,0,0,0,.21-18.38c-1.22-3.41-3.55-6.08-7.41-6.13-12.85-.14-25.7,0-38.84,0v30.41C110.28,158.32,123,158.43,135.7,158.25Z"/><path d="M236.31,158.67c-12.27,0-23,9.94-23.44,21.72h43.92C256.24,166.67,248.62,158.67,236.31,158.67Z"/></g></g></g></motion.svg>
                 </a>
-                
-                {/* <LinkedIn className='h-[100px] py-4 px-10 fill-heading hover:fill-highlight hover:duration-200' />
-                <Github className='h-[100px] py-4 px-10 fill-heading hover:fill-highlight hover:duration-200' />
-                <Email className='h-[100px] py-4 px-10 fill-heading hover:fill-highlight hover:duration-200' />
-                <Behance className='h-[100px] py-4 px-10 fill-heading hover:fill-highlight hover:duration-200' /> */}
             </motion.div>
         </div>
     </div>
