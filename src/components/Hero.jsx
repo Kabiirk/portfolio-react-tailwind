@@ -12,7 +12,6 @@ const main = {
       // delayChildren: 0.75,
       staggerChildren: 0.25,
       duration:0.5,
-      // staggerChildren:0.5,
     },
   },
 }
@@ -26,7 +25,6 @@ const left = {
       delayChildren: 3,
       staggerChildren:0.25,
       duration:0.5,
-      // delay:1.5,
     },
   },
 }
@@ -51,8 +49,6 @@ const center = {
     transition: {
       delayChildren: 1.25,
       staggerChildren:0.5,
-      // duration:0.75,
-      // delay:2.5,
     },
   },
 }

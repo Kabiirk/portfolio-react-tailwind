@@ -12,7 +12,6 @@ const variant={
       opacity:1,
       transition: {
         staggerChildren:0.2,
-        // delay:2.5,
         duration:1,
       },
     },

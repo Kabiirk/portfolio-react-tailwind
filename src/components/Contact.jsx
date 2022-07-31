@@ -3,11 +3,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-// import { ReactComponent as LinkedIn } from '../assets/social_icons/LinkedIn_Rounded.svg';
-// import { ReactComponent as Github } from '../assets/social_icons/Github_Rounded.svg';
-// import { ReactComponent as Email } from '../assets/social_icons/Email_Rounded.svg';
-// import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounded.svg';
-
 const variant={
     hidden: {y:50, opacity:0},
     visible: {
