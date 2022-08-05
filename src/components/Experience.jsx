@@ -55,11 +55,11 @@ const Experience = () => {
       org:"IBM",
       tabname:'IBM',
       duration: "April 2020 - June 2020",
-      para:'As IoT Solution data-architect of "Smart-Surveillance" Project that IBM implemented for London HQ’ed Security Services MNC, I worked on',
+      para:'As IoT Solution data-architect of "Smart-Surveillance" Project for London HQ’ed Security Services MNC, I worked on',
       points: [
           'ETL process to design a Python-based scalable data-transport service for real-time video-feeds using IBM Visual Insight (IVI) Analytics Platform Insights.',
           'Services Solution using decentralized SOA and Secure Data-streaming.',
-          'Devising a Solution that included creation of raw datasets, training-&- testing of the surveillance model, &',
+          'Creation of raw datasets, training-&- testing of the surveillance model, &',
           'Leverage Kafka, Kubernetes and Docker etc.',
         ],
     },

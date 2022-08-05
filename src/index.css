@@ -55,7 +55,7 @@
 
 .not-active{
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-left: 1px solid #E5E7EB;
+    border-left: 2px solid #E5E7EB;
     color: rgb(209 213 219);
     cursor: pointer;
     flex-shrink: 0;
@@ -77,7 +77,7 @@
 
     .not-active{
         border-left: 0;
-        border-top: 1px solid #E5E7EB;
+        border-top: 2px solid #E5E7EB;
     }
   }
 
