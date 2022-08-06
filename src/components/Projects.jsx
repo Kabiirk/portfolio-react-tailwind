@@ -80,10 +80,10 @@ const Projects = () => {
                         variants={variant}
                         initial='hidden'
                         animate={control}>
-                { Project_Data.map( (data) =>{
+                { Project_Data.map( (data, index) =>{
                     return(
                       // Alternative is using forwardref() as per framer documentation
-                      <motion.div key={data.id} variants={variant}>
+                      <motion.div key={index} variants={variant}>
                         <ProjectCard title={data.title} url={data.url} description={data.description} stack={data.stack} />
                       </motion.div>
                     );
