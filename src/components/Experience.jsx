@@ -26,6 +26,7 @@ const Experience = () => {
 
   const Job_Data = [
     {
+      id: 1,
       position: "Assosciate, OneCyber",
       org:"PriceWaterhouseCoopers, India",
       tabname:'PwC India',
@@ -37,6 +38,7 @@ const Experience = () => {
         ],
     },
     {
+      id: 2,
       position: "Intern, Dept. of Earth Sciences",
       org:"IIT-Roorkee",
       tabname:'IIT-Roorkee',
@@ -48,6 +50,7 @@ const Experience = () => {
         ],
     },
     {
+      id: 3,
       position: "Intern, Data Engineering",
       org:"IBM",
       tabname:'IBM',
@@ -61,6 +64,7 @@ const Experience = () => {
         ],
     },
     {
+      id: 4,
       position: "Intern, Data Analytics",
       org:"Deloitte",
       tabname:'Deloitte',
@@ -73,6 +77,7 @@ const Experience = () => {
         ],
     },
     {
+      id: 5,
       position: "Microsoft Student Partner",
       org:"VIT Knowledge Community",
       tabname:'Microsoft SP',
@@ -83,6 +88,7 @@ const Experience = () => {
         ],
     },
     {
+      id: 6,
       position: "Head, University Affairs",
       org:"Computer Society of India, VIT",
       tabname:'CSI-VIT',
@@ -113,10 +119,10 @@ const Experience = () => {
               proper amount of section is in view */}
           <div ref={ref} className='max-w-[800px] w-full grid md:grid-cols-4 grid-col-1 px-10 text-xs'>
               <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll col-span-1 sm:col-span-1 font-sf-mono-re custom-scroll mr-10'>
-                  { Job_Data.map( (data, index) =>{
+                  { Job_Data.map( (data) =>{
                     return(
                       // <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
-                      <div key={index} className={ togglestate===data.id ? 'active' : 'not-active'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
+                      <div key={data.id} className={ togglestate===data.id ? 'active' : 'not-active'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
                     )
                   }
                   )
