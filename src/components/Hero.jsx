@@ -22,7 +22,7 @@ const left = {
     x:0,
     opacity:1,
     transition: {
-      delayChildren: 3,
+      delayChildren: 2,
       staggerChildren:0.25,
       duration:0.5,
     },
@@ -36,7 +36,7 @@ const right = {
     opacity:1,
     transition: {
       duration:0.5,
-      delay: 4,
+      delay: 2.6,
     },
   },
 }
@@ -48,7 +48,7 @@ const center = {
     opacity:1,
     transition: {
       delayChildren: 1.25,
-      staggerChildren:0.5,
+      staggerChildren:0.2,
     },
   },
 }
