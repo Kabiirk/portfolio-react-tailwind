@@ -121,7 +121,6 @@ const Experience = () => {
               <div className='text-left md:flex-col flex sm:items-stretch overflow-x-scroll col-span-1 sm:col-span-1 font-sf-mono-re custom-scroll mr-10'>
                   { Job_Data.map( (data) =>{
                     return(
-                      // <div className={ togglestate===data.id ? 'bg-cyan-200 bg-opacity-20 text-cyan-400 cursor-pointer border-l-[3px] border-cyan-400 px-4 py-2 flex-shrink-0' : 'cursor-pointer border-l-2 px-4 py-2 hover:bg-cyan-200 hover:bg-opacity-20 hover:duration-200 flex-shrink-0'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
                       <div key={data.id} className={ togglestate===data.id ? 'active' : 'not-active'} onClick={() => toggleTab(data.id)}>{data.tabname}</div>
                     )
                   }
