@@ -10,7 +10,7 @@ import {useState} from "react"
 import { motion } from 'framer-motion';
 
 function App() {
-  const [loading, setloading] = useState(true)
+  const [loading, setloading] = useState(true);
 
   setTimeout(() => {
     setloading(false);
@@ -28,7 +28,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <About />
+      <About/>
       <SkillsAndTools />
       <Experience />
       <Projects />

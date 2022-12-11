@@ -26,7 +26,7 @@ const Contact = () => {
       }, [control, inView]);
 
   return (
-    <div name='Contact' className='w-full h-screen bg-background flex flex-col justify-center items-center p-6 text-gray-300'>
+    <div id="contact" className='w-full h-screen bg-background flex flex-col justify-center items-center p-6 text-gray-300'>
         <div className='m-auto p-4 px-10'>
             <motion.div className='text-center'
             ref={ref}

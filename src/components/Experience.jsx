@@ -101,7 +101,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name='about' className='w-full h-screen flex bg-background text-gray-300'>
+    <div id='experience' className='w-full h-screen flex bg-background text-gray-300'>
         <motion.div className='max-w-[800px] p-4 m-auto flex flex-col justify-center items-center'
                     variants={variant}
                     initial='hidden'

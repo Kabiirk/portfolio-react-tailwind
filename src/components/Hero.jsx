@@ -4,6 +4,7 @@ import React from 'react'
 // import { ReactComponent as Github } from '../assets/social_icons/Github_Rounded.svg';
 // import { ReactComponent as Behance } from '../assets/social_icons/Behance_Rounded.svg';
 import { motion } from 'framer-motion';
+import {Link} from "react-scroll"
 
 const main = {
   hidden: {},
@@ -81,7 +82,9 @@ const Hero = () => {
             <motion.h1 variants={center} className='text-3xl sm:text-5xl font-calibre-sb text-heading py-2'>Kabiir Krishna</motion.h1>
             <motion.h2 variants={center} className='text-3xl sm:text-5xl font-calibre-sb text-subheading pt-2'>I build awesome things.</motion.h2>
             <motion.div variants={center} className='pt-6'>
+              <Link to="about" spy={false} smooth={true} offset={0} duration={500}>
                 <button className='text-sm rounded-md flex items-center px-6 py-3 font-sf-mono-re border-2 text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'>Check out my website !</button>
+              </Link>
             </motion.div>
         </motion.div>
 

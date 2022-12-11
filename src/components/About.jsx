@@ -21,7 +21,7 @@ const About = () => {
     }, [control, inView]);
 
     return (
-      <div name='about' className='w-full h-screen flex bg-background text-heading'>
+      <div id="about" className='w-full h-screen flex bg-background text-heading'>
         <motion.div className='max-w-[800px] m-auto flex flex-col justify-center items-center p-4'
                     ref={ref}
                     variants={variant}
@@ -54,7 +54,7 @@ const About = () => {
                 </p>
                 <br />
                 <div className='flex sm:justify-start justify-center'>
-                <button className='border-2 rounded-md px-6 py-3 text-sm font-sf-mono-re justified-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'>Download my Resume !</button>
+                <a href="resume/Kabiir Krishna.pdf" className='border-2 rounded-md px-6 py-3 text-sm font-sf-mono-re justified-center text-highlight border-highlight hover:bg-[#64ffda] hover:bg-opacity-10 hover:duration-200'download>Download my Resume !</a>
                 </div>
               </div>
             </div>
